@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -29,6 +30,7 @@ ul {
 .main-header__main-nav {
   display: none;
 }
+
 /* *** TYPOGRAPHY *** */
 
 h1,
@@ -229,17 +231,14 @@ a {
 }
 
 /* *** MEDIA QUERIES ***  */
+
 @media (min-width: 500px) {
   .hero__title {
     margin-top: 2em;
   }
-
-  .articles {
-    grid-column: 2;
-  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .articles__container {
     display: grid;
     grid-gap: 1em;
