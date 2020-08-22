@@ -76,22 +76,28 @@ a {
 }
 
 .main-header__mobile-background {
+  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
   max-height: 60vh;
-  background-image: url("../images/bg-intro-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-/* .main-header__logo-nav {
-  max-height: 60vh;
-} */
-.main-header__mobile-phones {
+.main-header__mobile-green-background {
   position: relative;
-  top: -30%;
+  width: 100%;
+  max-height: 900px;
+  top: 0;
+  right: 0;
+}
+
+.main-header__mobile-phones {
+  position: absolute;
+  max-height: 700px;
+  max-width: 100%;
+  transform: translateX(-50%);
   padding: 0 1em;
+  top: -29%;
+  left: 50%;
 }
 
 .main-header__button {
