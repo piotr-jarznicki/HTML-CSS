@@ -91,7 +91,9 @@ a {
   top: 0;
   right: 0;
 }
-
+.main-header__desktop-green-background {
+  display: none;
+}
 .main-header__mobile-phones {
   position: absolute;
   max-height: 700px;
@@ -249,5 +251,110 @@ a {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* *** DESKTOP ***  */
+
+@media (min-width: 1024px) {
+  /* ** ACTIVE STATES ** */
+  .main-nav__link:hover {
+    border-bottom: 3px solid;
+    border-color: linear-gradient(
+      0.25turn,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+  }
+  :root {
+    font-size: 20px;
+  }
+  body {
+    text-align: left;
+  }
+
+  /* *** MAIN HEADER *** */
+
+  .main-header__hamburger-icon {
+    display: none;
+  }
+  .main-header__mobile-green-background {
+    display: none;
+  }
+
+  .main-header__desktop-green-background {
+    display: block;
+    position: relative;
+    right: -30%;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .main-header__mobile-phones {
+    max-height: 700px;
+    max-width: 100%;
+    transform: translateX(0);
+    padding: 0 1em;
+    top: -10%;
+    left: 57%;
+  }
+
+  .main-header__main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-header__logo-nav {
+    padding: 0.5em 6em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__link {
+    font-size: 0.8rem;
+    padding-bottom: 1em;
+    margin-right: 1.5em;
+    color: var(--text-clr);
+    transition: 0.3s;
+  }
+
+  .main-header__mobile-logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-header__button {
+    display: block;
+  }
+
+  .hero,
+  .perks,
+  .articles .footer {
+    padding: 2em 6em;
+  }
+
+  .articles__container {
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .perks__container {
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .perk__image {
+    margin: 0;
+    padding: 0;
   }
 }

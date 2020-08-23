@@ -21,52 +21,60 @@
     <header class="main-header">
       <section class="main-header__logo-nav">
         <div class="main-header__mobile-logo-nav">
-          <img
-            src="images/logo.svg"
-            alt="Easybank website logo using dark coloured font"
-            class="main-header__logo"
-          />
+          <div class="logo-container">
+            <img
+              src="images/logo.svg"
+              alt="Easybank website logo using dark coloured font"
+              class="main-header__logo"
+            />
+          </div>
           <img
             src="images/icon-hamburger.svg"
             alt="Dark coloured bars icon"
             class="main-header__hamburger-icon"
           />
+          <nav class="main-nav main-header__main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Home</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">About</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Contact</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Blog</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn-primary main-header__button">
+            Request Invite
+          </button>
         </div>
-        <div class="main-header__mobile-background">
-          <img
-            src="images/bg-intro-mobile.svg"
-            alt="Illustration background"
-            class="main-header__mobile-green-background"
-          />
-          <img
-            class="main-header__mobile-phones"
-            src="images/image-mockups.png"
-            alt="4 mobilephone snapshots"
-          />
-        </div>
-        <nav class="main-nav main-header__main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="" class="menu__link">Home</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav__link">About</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav__link">Contact</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav__link">Blog</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="" class="main-nav__link">Careers</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn-primary main-header__button">
-          Request Invite
-        </button>
       </section>
+      <div class="main-header__mobile-background">
+        <img
+          src="images/bg-intro-mobile.svg"
+          alt="Illustration background"
+          class="main-header__mobile-green-background"
+        />
+        <img
+          class="main-header__mobile-phones"
+          src="images/image-mockups.png"
+          alt="4 mobilephone snapshots"
+        />
+
+        <img
+          src="images/bg-intro-desktop.svg"
+          alt="Illustration background"
+          class="main-header__desktop-green-background"
+        />
+      </div>
 
       <section class="hero">
         <h1 class="hero__title">Next generation digital banking</h1>
