@@ -1,185 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Job Listings</title>
-</head>
-<body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Job Listings</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <section class="job-offer main__job-offer job-offer--featured">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Photosnap</h2>
+        <aside class="job-offer__perks">
+          <div class="perk perk--new">
+            <p class="perk__text perk__text--new">New!</p>
+          </div>
+          <div class="perk"><p class="perk__text perk__text">Featured</p></div>
+        </aside>
+        <h1 class="job-offer__post">Senior Frontend Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">1d ago</p>
+          <p class="details__tenure">Full time</p>
+          <p class="details__location">USA</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Senior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">HTML</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">CSS</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer job-offer--featured">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Manage</h2>
+        <aside class="job-offer__perks">
+          <div class="perk perk--new">
+            <p class="perk__text perk__text--new">New!</p>
+          </div>
+          <div class="perk"><p class="perk__text perk__text">Featured</p></div>
+        </aside>
+        <h1 class="job-offer__post">Fullstack Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">1d ago</p>
+          <p class="details__tenure">Part Time</p>
+          <p class="details__location">Remote</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Fullstack</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Midweight</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Python</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">React</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer job-offer--featured">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Account</h2>
+        <aside class="job-offer__perks">
+          <div class="perk perk--new">
+            <p class="perk__text perk__text--new">New!</p>
+          </div>
+        </aside>
+        <h1 class="job-offer__post">Junior Frontend Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">2d ago</p>
+          <p class="details__tenure">Part Time</p>
+          <p class="details__location">USA only</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">React</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Sass</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">MyHome</h2>
+        <h1 class="job-offer__post">Junior Frontend Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">5d ago</p>
+          <p class="details__tenure">Contract</p>
+          <p class="details__location">USA only</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">CSS</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Javascript</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Loop Studios</h2>
+        <h1 class="job-offer__post">Software Engineer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">1w ago</p>
+          <p class="details__tenure">Full Time</p>
+          <p class="details__location">Worldwide</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Fullstack</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Midweight</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Ruby</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Sass</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">FaceIt</h2>
+        <h1 class="job-offer__post">Junior Backend Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">2w ago</p>
+          <p class="details__tenure">Full Time</p>
+          <p class="details__location">UK only</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Backend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Ruby</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">RoR</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Shortly</h2>
+        <h1 class="job-offer__post">Junior Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">2w ago</p>
+          <p class="details__tenure">Full Time</p>
+          <p class="details__location">Worldwide</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">HTML</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Sass</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Insure</h2>
+        <h1 class="job-offer__post">Junior Frontend Developer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">2w ago</p>
+          <p class="details__tenure">Full Time</p>
+          <p class="details__location">USA only</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Vue</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Sass</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">Eyecam Co.</h2>
+        <h1 class="job-offer__post">Full Stack Engineer</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">3w ago</p>
+          <p class="details__tenure">Full Time</p>
+          <p class="details__location">Worldwide</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Fullstack</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Midweight</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Python</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Django</p>
+          </div>
+        </section>
+      </section>
+      <section class="job-offer main__job-offer">
+        <img src="" alt="" class="job-offer__image" />
+        <h2 class="job-offer__firm-name">The Air Filter Company</h2>
+        <h1 class="job-offer__post">Front-end Dev</h1>
+        <section class="details job-offer__details">
+          <p class="details__date">1mo ago</p>
+          <p class="details__tenure">Part Time</p>
+          <p class="details__location">Worldwide</p>
+        </section>
+        <section class="job-offer__tech-stack">
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Frontend</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Junior</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">JavaScript</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">React</p>
+          </div>
+          <div class="job-offer__tech">
+            <p class="job-offer__tech-text">Sass</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
