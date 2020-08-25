@@ -26,11 +26,12 @@ img {
 .header {
   background: var(--primary-clr);
 }
-.header__background-image {
+.header__mobile-background-image {
   width: 100%;
 }
-main {
-  background: var(--main-bg-clr);
+
+.header__desktop-background-image {
+  display: none;
 }
 
 section {
@@ -60,11 +61,7 @@ h2 {
 .job-offer__post {
   font-size: 1.1rem;
   color: black;
-}
-
-.perk__text {
-  text-transform: uppercase;
-  color: white;
+  transition: 0.3s;
 }
 
 .details__text {
@@ -74,6 +71,7 @@ h2 {
 /* *** LAYOUT ***  */
 
 main {
+  background: var(--main-bg-clr);
   padding-top: 0.5em;
 }
 
@@ -117,12 +115,12 @@ main {
 }
 
 .perk__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  line-height: 2.3em;
+  color: white;
 }
 
 .job-offer__perks {
@@ -144,10 +142,12 @@ main {
   margin-right: 2em;
   font-size: 0.9rem;
 }
+
 .job-offer__tech-stack {
   display: flex;
   flex-wrap: wrap;
 }
+
 .job-offer__tech {
   display: flex;
   height: 2em;
@@ -155,8 +155,86 @@ main {
   margin: 1em 0.8em 0.5em 0;
   background: hsl(180, 31%, 95%);
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .job-offer__tech-text {
   align-self: center;
+  transition: 0.3s;
+}
+
+/* *** MEDIA QUERIES ***  */
+
+/* ** DESKTOP **  */
+
+/* ** ACTIVE STATES **  */
+
+.job-offer__post:hover {
+  cursor: pointer;
+  color: var(--primary-clr);
+}
+
+.job-offer__tech:hover {
+  cursor: pointer;
+  background: var(--primary-clr);
+  color: white;
+}
+
+.job-offer__tech:hover .job-offer__tech-text {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .header__mobile-background-image {
+    display: none;
+  }
+
+  .header__desktop-background-image {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 0.5em;
+  }
+
+  .job-offer {
+    padding: 2.5em 1em 1em 10em;
+    margin: 3.5em 7em;
+  }
+
+  .job-offer__image {
+    top: 20%;
+    left: 2%;
+    width: 7em;
+  }
+
+  .job-offer__post {
+    margin-top: 1em;
+  }
+
+  .details {
+    border-bottom: none;
+  }
+
+  .job-offer__tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+  }
+
+  .job-offer__tech {
+    display: flex;
+    height: 2em;
+    padding: 0 0.5em;
+    margin: 1em 0.8em 0.5em 0;
+    background: hsl(180, 31%, 95%);
+    border-radius: 5px;
+  }
+
+  .job-offer__tech-text {
+    align-self: center;
+  }
 }
