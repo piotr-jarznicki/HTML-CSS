@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping card project</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <section class="shopping-cart">
+      <h1 class="shopping-cart__heading">Your Shopping Cart</h1>
 
-</body>
+      <article class="shopping-item shopping-cart__item">
+        <img src="images/shirt-image.jpg" alt="" class="shopping-item__image" />
+        <h3 class="shopping-item__name">Denim T-Shirt</h2>
+        <p class="shopping-item__number">Ref. 357723618</p>
+        <p class="shopping-item__color">Blue</p>
+        <div class="quantity shopping-item__quantity">
+          <p class="quantity__number">3</p>
+          <p class="plus">+</p>
+          <p class="minus">-</p>
+        </div>
+        <p class="shopping-item__price">200 zł</p>
+        <p class="shopping-item__cancel-icon">X</p>
+      </article>
+      <article class="shopping-item shopping-cart__item">
+        <img src="images/pants-image.jpg" alt="" class="shopping-item__image" />
+        <h3 class="shopping-item__name">Denim Pants</h2>
+        <p class="shopping-item__number">Ref. 007723618</p>
+        <p class="shopping-item__color">Blue</p>
+        <div class="quantity shopping-item__quantity">
+          <p class="quantity__number">2</p>
+          <p class="plus">+</p>
+          <p class="minus">-</p>
+        </div>
+        <p class="shopping-item__price">400 zł</p>
+        <p class="shopping-item__cancel-icon">X</p>
+      </article>
+      <article class="shopping-item shopping-cart__item">
+        <img src="images/watch-image.jpg" alt="" class="shopping-item__image" />
+        <h3 class="shopping-item__name">Denim Watch</h2>
+        <p class="shopping-item__number">Ref. 007723618</p>
+        <p class="shopping-item__color">Blue</p>
+        <div class="quantity shopping-item__quantity">
+          <p class="quantity__number">5</p>
+          <p class="plus">+</p>
+          <p class="minus">-</p>
+        </div>
+        <p class="shopping-item__price">600 zł</p>
+        <p class="shopping-item__cancel-icon">X</p>
+      </article>
+      <article class="shopping-item shopping-cart__item">
+        <img src="images/boots-image.jpg" alt="" class="shopping-item__image" />
+        <h3 class="shopping-item__name">Denim Heels</h2>
+        <p class="shopping-item__number">Ref. 1177233418</p>
+        <p class="shopping-item__color">Blue</p>
+        <div class="quantity shopping-item__quantity">
+          <p class="quantity__number">1</p>
+          <p class="plus">+</p>
+          <p class="minus">-</p>
+        </div>
+        <p class="shopping-item__price">800 zł</p>
+        <p class="shopping-item__cancel-icon">X</p>
+      </article>
+      <section class="shopping-cart-downside__text">
+        <p class="go-backwards__text">Back to Shop</p>
+        <p class="price-text">Subtotal:2000 zł</p>
+      </section>
+    </section>
 
+    <section class="credit-card">
+        <h2 class="credit-card__heading">Card Details</h2>
+        <section class="credit-card-types credit-card__types">
+        <p class="credit-card__text">Select Card Type</p>
+        <img src="images/credit-card (1).svg" alt="" class="credit-card__type">
+        <img src="images/credit-card (1).svg" alt="" class="credit-card__type">
+        <img src="images/credit-card (1).svg" alt="" class="credit-card__type">
+        </section>
+        <label class ="credit-card__number" for="credit-card-number">
+            <input name = "credit-card-number" type="number">
+        </label>
+        <label class ="credit-card__number" for="credit-card-number">
+            Card Number
+            <input name = "credit-card-number" type="number">
+        </label>
+
+        <label for="exp-date">Expiry Date
+
+<input type="date" id="exp-date" name="exp-date"
+       value="2018-07-22"
+       min="2018-01-01" max="2026-12-31">
+    </label>
+        <button class="credit-card__checkout-button">Checkout</button>
+    </section>
+  </body>
 </html>
