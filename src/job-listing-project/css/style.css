@@ -167,23 +167,6 @@ main {
 
 /* ** DESKTOP **  */
 
-/* ** ACTIVE STATES **  */
-
-.job-offer__post:hover {
-  cursor: pointer;
-  color: var(--primary-clr);
-}
-
-.job-offer__tech:hover {
-  cursor: pointer;
-  background: var(--primary-clr);
-  color: white;
-}
-
-.job-offer__tech:hover .job-offer__tech-text {
-  color: white;
-}
-
 @media (min-width: 1024px) {
   .header__mobile-background-image {
     display: none;
@@ -192,6 +175,23 @@ main {
   .header__desktop-background-image {
     display: block;
     width: 100%;
+  }
+
+  /* ** ACTIVE STATES **  */
+
+  .job-offer__post:hover {
+    cursor: pointer;
+    color: var(--primary-clr);
+  }
+
+  .job-offer__tech:hover {
+    cursor: pointer;
+    background: var(--primary-clr);
+    color: white;
+  }
+
+  .job-offer__tech:hover .job-offer__tech-text {
+    color: white;
   }
 
   main {
