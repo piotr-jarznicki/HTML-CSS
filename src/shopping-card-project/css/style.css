@@ -1,3 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  --headings-clr: #423d3a;
+}
+
 body {
-    background:grey;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+  background: #ecf0f1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 5em;
+  height: 5em;
+}
+
+/* *** TYPOGRAPHY ***  */
+
+h1,
+h2 {
+  font-weight: 400;
+  color: var(--headings-clr);
+}
+
+h3 {
+  font-weight: 300;
+  color: #423d3a;
+}
+
+h3 {
+  font-weight: 600;
+}
+.shopping-item__number {
+  font-size: 0.8rem;
+  color: #bbbec0;
+}
+
+/* *** LAYOUT ***  */
+.shopping-item__text-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.shopping-cart__item {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+
+  margin: 1em 2em;
+  border-radius: 2px;
+  background: #e5e9ea;
+}
+.shopping-item {
+  padding: 8em 0 0.5em 0;
+}
+.shopping-item__image {
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shopping-item__quantity {
+  display: flex;
+}
+
+.shopping-item__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  background: #423d3a;
+}
+
+.quantity__number {
+  font-size: 1.5rem;
+}
+
+.shopping-item__cancel-icon {
+  font-size: 1.5rem;
+}
+
+.shopping-cart-downside__text {
+  margin: 0 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-card {
+  padding: 3em 0 0em 0;
+  background: #393534;
+  color: white;
+}
+
+.credit-card__heading {
+  color: #eebf0e;
+  font-size: 1.7rem;
+}
+
+.credit-card-types {
+  display: flex;
+  justify-content: center;
+}
+
+.credit-card__type {
+  width: 3.5em;
+  margin-right: 1em;
+}
+
+.credit-card__checkout-button {
+  font-size: 1.3rem;
+  width: 100%;
+  height: 4em;
+  background: #eebf0e;
+  margin: 2em 0 0 0;
+  border: none;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 2em;
+}
+
+.credit-card__number,
+.credit-card__exp-date {
+  margin-bottom: 1em;
 }
