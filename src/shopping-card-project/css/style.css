@@ -106,6 +106,7 @@ h3 {
 }
 
 .credit-card {
+  position: relative;
   padding: 3em 0 0em 0;
   background: #393534;
   color: white;
@@ -127,12 +128,17 @@ h3 {
 }
 
 .credit-card__checkout-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   font-size: 1.3rem;
   width: 100%;
   height: 4em;
   background: #eebf0e;
   margin: 2em 0 0 0;
   border: none;
+  transition: 0.3s;
 }
 
 .main-form {
@@ -144,4 +150,97 @@ h3 {
 .credit-card__number,
 .credit-card__exp-date {
   margin-bottom: 1em;
+}
+
+input {
+  margin: 0 auto;
+  width: 25em;
+  height: 3em;
+}
+
+input:last-of-type {
+  margin-bottom: 10em;
+}
+
+/* *** MEDIA QUERIES ***  */
+
+@media (min-width: 768px) {
+  .shopping-item {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .shopping-item__quantity {
+    display: flex;
+  }
+
+  .shopping-item__image {
+    top: 20%;
+    left: 5%;
+    transform: translateX(0);
+    position: absolute;
+  }
+
+  .shopping-item__text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 4em 0 8em;
+    margin: 0;
+    text-align: left;
+  }
+
+  .quantity__option {
+    margin-left: 1em;
+  }
+
+  .shopping-cart__item {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    margin: 1em 2em;
+    border-radius: 2px;
+    background: #e5e9ea;
+  }
+
+  .shopping-item__quantity {
+    display: flex;
+  }
+
+  .shopping-item__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* ** ACTIVE STATES **  */
+  .credit-card__checkout-button:hover {
+    cursor: pointer;
+    background: #d3a80e;
+  }
+  /* *** LAYOUT BREAKS INTO 2 COLUMNS *** */
+
+  @media (min-width: 1600px) {
+    .shopping-cart__heading {
+      text-align: left;
+      margin-left: 1.2em;
+    }
+
+    .grid-container {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+    }
+    .shopping-cart {
+      width: 58%;
+    }
+    .credit-card {
+      -webkit-box-shadow: -19px 0px 58px -15px rgba(87, 87, 87, 1);
+      -moz-box-shadow: -19px 0px 58px -15px rgba(87, 87, 87, 1);
+      box-shadow: -19px 0px 58px -15px rgba(87, 87, 87, 1);
+      width: 40%;
+      height: 100vh;
+    }
+  }
 }
