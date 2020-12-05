@@ -1,15 +1,13 @@
-# JFDDR1 :hammer_and_wrench: Projekt 1
+# :hammer_and_wrench: HTML/CSS Projects
 
-Repozytorium dla Projektu nr 1.
+The following projects were created by me to practice HTML/CSS/RWD & solidify my knowledge. 
 
-## Do zrobienia
-### Widok strony - temat do wyboru
-- Layout strony firmowej (fikcyjnej firmy) z wieloma podstronami
-- Layout koszyka zakupowego
-- Layout listy dostępnych ofert pracy
+## :heavy_check_mark: Landing page layout
 
-### Strona _o mnie_
-Strona o mnie, która będzie opublikowana na GitHub Pages.
+## :heavy_check_mark: Shopping card layout 
 
-### Profil na GitHub
-Porządnie zrobiony mój profil na GitHubie.
+## :heavy_check_mark: Job listing layout 
+
+Simply click link in the about section of this repository or click here https://piotr-jarznicki.github.io/jfddr1-project-1/ to browse between layouts. 
+
+
