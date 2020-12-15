@@ -8,6 +8,6 @@ The following projects were created by me to practice HTML/CSS/RWD & solidify my
 
 ## :heavy_check_mark: Job listing layout 
 
-Simply click link in the about section of this repository or click here https://piotr-jarznicki.github.io/jfddr1-project-1/ to browse between layouts. 
+Simply click link in the about section of this repository or go to https://piotr-jarznicki.github.io/HTML-CSS/ to browse between layouts. 
 
 
